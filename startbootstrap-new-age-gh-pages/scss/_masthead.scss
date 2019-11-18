@@ -7,9 +7,7 @@ header.masthead {
     padding-bottom: 100px;
 
     color: white;
-    background: url('../img/bg-pattern.png'), $theme-secondary;
-    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
-    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: url('../img/fondo2.jpg'), $theme-fourth;
     .header-content {
         max-width: 500px;
         margin-bottom: 100px;
@@ -20,22 +18,27 @@ header.masthead {
         }
     }
     .device-container {
-        max-width: 325px;
+        max-width: 300px;
         margin-right: auto;
         margin-left: auto;
         .screen img {
-            border-radius: 3px;
+            border-radius: 20px;
         }
     }
+    .logo-img {
+        background-image: url("../img/logo.jpg");
+    }
     @media (min-width: 992px) {
-        height: 100vh;
-        min-height: 775px;
+        height: 50vh;
+        min-height: 400px;
         padding-top: 0;
         padding-bottom: 0;
         .header-content {
             margin-bottom: 0;
-
-            text-align: left;
+            text-align: center;
+            background-color: #28a745;
+            padding: 10px;
+            opacity: 0.95;
             h1 {
                 font-size: 50px;
             }

@@ -21,6 +21,7 @@
         > li {
             > a {
                 font-size: 11px;
+                font-weight: bold;
                 @include alt-font;
                 &.active {
                     color: $theme-primary !important;
@@ -41,7 +42,7 @@
     }
     @media (min-width: 992px) {
         border-color: transparent;
-        background-color: transparent;
+        background-color: #28a745;
         .navbar-brand {
             color: fade(white, 70%);
             &:hover,

@@ -1,24 +1,52 @@
 // Styling for the call to action section
 section.cta {
     position: relative;
-    padding: 250px 0;
-    background-image: url('../img/bg-cta.jpg');
+    padding: 70px 0;
+    background-image: url('../img/campesino.jpg');
     background-position: center;
     @include background-cover;
     .cta-content {
         position: relative;
         z-index: 1;
         h2 {
-            font-size: 50px;
+            font-size: 20px;
             max-width: 450px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+        }
+        h3 {
+            font-size: 20px;
+            max-width: 450px;
+            font-weight: bold;
             margin-top: 0;
             margin-bottom: 25px;
             color: white;
         }
         @media (min-width: 768px) {
             h2 {
-                font-size: 80px;
+                font-size: 50px;
             }
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+    .feature-item {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+        }
+        i {
+            font-size: 80px;
+            display: block;
+            margin-bottom: 15px;
+            background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+            background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     .overlay {
